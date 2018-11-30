@@ -60,6 +60,32 @@
         }
     }
 
+    if(navigator.onLine){
+        app.filtroEstado.addEventListener("change", function(e){
+            var perrisFiltrados = app.listaPerris.filter(function(perro){
+                if (perro.estado == app.filtroEstado.value || app.filtroEstado.value == "TODOS"){
+                    return perro;
+                }
+            });
+            mostrarPerris(perrisFiltrados);
+        });
+        loadData();
+    }else{
+        var perroLocal = JSON.parse(localStorage.getItem('perrisLocal'));
+        console.log(perroLocal);
+        app.localList = perroLocal.results;
+        mostrarPerris(app.localList);
+
+        app.perroEstadoFilter.addEventListener( "change", function( e ) {
+            var filteredPerros = app.perroList.filter( function( perro ) {
+                if( perro.estado == app.perroEstadoFilter.value ) {
+                    return perro;
+                }
+            } );
+            displayPerros( filteredPerros );
+        } );
+    }
+
     app.perroEstadoFilter.addEventListener( "change", function( e ) {
         var filteredPerros = app.perroList.filter( function( perro ) {
             if( perro.estado == app.perroEstadoFilter.value ) {
