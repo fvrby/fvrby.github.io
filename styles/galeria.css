@@ -1,0 +1,28 @@
+.perrosContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perroContainer {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 0.5px rgb(255, 102, 128);
+    background-color: pink;
+    text-align: center;
+}
+
+    .perroContainer img {
+        border-radius: 10px;
+    }
+.perroEstadoFilter {
+    width: 50%;
+}
+
+
+@media (min-width: 1024px){
+	footer{
+		margin-top: 752px;
+	}
+}

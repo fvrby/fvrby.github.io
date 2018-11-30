@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: pink;
+}
+
+header, main {
+    padding: 15px;
+}
+
+footer{
+    background-color: rgb(255, 102, 128);
+    color: pink;
+    padding: 10px;
+}
+
+/* Menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 102, 128);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    color: pink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: rgb(172, 23, 47);
+}
+
+.bearsContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bearContainer{
+    text-align: center;
+    border: solid 0.5px rgb(255, 102, 128);
+    margin: 4px;
+    padding: 5px;
+    background-color: pink;
+    border-radius: 10px;
+}

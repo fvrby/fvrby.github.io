@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var imgItems = $('.slider li').length; // Slides a agregar
 	var imgPos = 1;
-
+    //js que controla los slides**
 	// Agrega pagina
 	for(i = 1; i <= imgItems; i++){
 		$('.pagination').append('<li><span class="fa fa-circle"></span></li>');
