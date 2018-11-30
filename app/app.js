@@ -13,6 +13,7 @@
     var app = {
         perroEstadoFilter: document.getElementById( "perroEstadoFilter" ),
         perroList: [],
+        localList : [],
     }
 
     var loadData = function() {
