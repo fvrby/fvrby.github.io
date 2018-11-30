@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/estil.css"/>
+    <link rel="stylesheet" href="styles/registro.css"/>
+    <link rel="stylesheet" href="styles/fontello.css"/>
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="icon" href="images/dog-icono.png" />
+    <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/dog-icono.png"/>
+    <title>Mis Perris</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-dog">Mis Perris</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="registro.html">Registro</a>
+                <a href="login.html">Login</a>
+                <a href="gallery.html">Galeria</a>
+            </nav>
+        </div> 
+    </header>
+
+    <main class="cont">
+        <select id="perroEstadoFilter" class="btn__submit">
+            <option value="Disponible">Disponible</option>
+            <option value="Adoptado">Adoptado</option>
+            <option value="Rescatado">Rescatado</option>
+        </select>
+        <div id="perrosContainer" class="perrosContainer">
+            
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-twitter"></a>
+            <a href="" class="icon-gplus"></a>
+        </div>
+        <p class="copy">&copy; Mis perris 2018 - Todos los derechos reservados. </p>
+    </footer>
+
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

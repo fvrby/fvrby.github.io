@@ -4,26 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mis Perris</title>
-    <link rel="stylesheet" href="styles/main.css"/>
-    <link rel="icon" href="img/favicon.jpg" />
+    <link rel="stylesheet" href="styles/estily.css"/>
+    <link rel="stylesheet" href="styles/estilos.css"/>
+    <link rel="stylesheet" href="styles/font-awesome.css"/>
+    <link rel="stylesheet" href="styles/fontello.css"/>   
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="img/dog-icon.gif"/>
+    <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
+     <!-- Responsivo en IOS -->
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+     <meta name="apple-mobile-web-app-title" content="Weather PWA">
+     <link rel="apple-touch-icon" href="img/icons/icon-152x152.png">
+     <meta name="msapplication-TileImage" content="img/icons/icon-144x144.png">
+     <meta name="msapplication-TileColor" content="#2F3BA2">
+     <title>Mis Perris</title>
 </head>
 <body>
-    <header>
-        <h1>Mis Perris</h1>
-    </header>
-    <nav>
+<header>
+        <div class="contenedor">
+                <h1 class="icon-dog">Mis Perris</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="registro.html">Registro</a>
+                    <a href="login.html">Login</a>
+                    <a href="gallery.html">Galeria</a>
+                </nav>
+        </div> 
+</header>
+    
+<main>
+    <div class="slideshow">
+        <ul class="slider">
+            <li>
+                <img src="img/1.jpg" alt="Contando Experiencias">
+                <section class="caption">
+                    <h2>Perrito Lindo</h2>
+                    <p>Se Hace caca hediondo</p>
+                </section>
+            </li>
+            <li>
+                <img src="img/2.jpg" alt="Contando Experiencias">
+                <section class="caption">
+                    <h2>Perro Cumbiero</h2>
+                    <p>Le gustan las mujeres y la cervecita</p>
+                </section>
+            </li>
+            <li>
+                <img src="img/3.jpg" alt="Contando Experiencias">
+                <section class="caption">
+                    <h2>Perro De La Huamachuco</h2>
+                    <p>Tiene 3 tajos, 2 pensiones y ha estado en cana</p>
+                </section>
+            </li>
+            <li>
+                <img src="img/4.jpg" alt="Contando Experiencias">
+                <section class="caption">
+                    <h2>Perro vagabundo</h2>
+                    <p>ME REGALA UNA MONEA POFAVOOOOOOOO</p>
+                   </section>
+            </li>
+        </ul>
+  
+        <ol class="pagination">
+    
+        </ol>
+        
+        <div class="left">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+    
+        <div class="right">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+    </div>
+  
+    <section id="Bienvenidos">
+        <h2>Mis Perris</h2>
+        <p>Rescatamos Perros bastardos, no queridos por la gente</p>
+    </section>
+    <div class="main">
+        <div class="contenedor">
+            <section class="cursos">
+                <h2 class="section__titulo">Nuestras bestias</h2>
+                <div class="cursos__columna">
+                    <img src="img/img4.jpg" alt="Descripcion de perros" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos_titulo">Carlos Jr.</h3>
+                        <p class="cursos__txt">Un Perro medio maldito, sabe desactivar bombas y pegar balazos</p>
+                        <button class="button" onclick="">Vamos, Adoptame!</button>
+                    </div>
+                </div>
+                <div class="cursos__columna">
+                    <img src="img/img5.jpg" alt="Descripcion de perros" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos_titulo">Coreano</h3>
+                        <p class="cursos__txt">나는 페니스를 좋아한다.</p>
+                        <button class="button" onclick="">어서, 나를 입양해라.</button>
+                    </div>
+                </div>
+                <div class="cursos__columna">
+                    <img src="img/img6.jpg" alt="Descripcion de perros" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos_titulo">Tripalosky</h3>
+                        <p class="cursos__txt">Nacio en el frio, caza osos, toma vodka, se hizo una polera con la piel de un carlos</p>
+                        <button class="button" onclick="">Vamos, Adoptame!</button>
+                    </div>
+                </div>
+                <div class="cursos__columna">
+                    <img src="img/img7.jpg" alt="Descripcion de perros" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos_titulo">Geisha</h3>
+                        <p class="cursos__txt">Tiene sifilis, gonorrea, papilomas, vih y esta resfriaito, achuu!</p>
+                        <button class="button" onclick="">Vamos,Adoptame!</button>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                    <div class="info__columna">
+                        <img src="img/img1.jpg" alt="Perrito 1" class="info__img">
+                        <h2 class="info__titulo">Eskere</h2>
+                        <p class="info__txt">Se echo Movail ijijiiji</p>
+                    </div>
+                    <div class="info__columna">
+                        <img src="img/img2.jpg" alt="Perrito 2" class="info__img">
+                        <h2 class="info__titulo">Batman</h2>
+                        <p class="info__txt">Lo echaron de su grupo jijijii</p>
+                    </div>
+                    <div class="info__columna">
+                        <img src="img/img3.jpg" alt="Perrito 3" class="info__img">
+                        <h2 class="info__titulo">Carlos</h2>
+                        <p class="info__txt">La Perra de la sección</p>
+                    </div>
+                </section>
+        </div>
+    </div>
+  
+  </main>
 
-    </nav>
-    <main>
-        <p id="txtData">
-
-        </p>
-    </main>
-    <footer>
-        &copy; Todos los derechos reservados
-    </footer>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-twitter"></a>
+            <a href="" class="icon-gplus"></a>
+        </div>
+        <p class="copy">&copy; Mis perris 2018 - Todos los derechos reservados. </p>
+    </footer>   
     <script src="app/app.js"></script>
+    <script src="app/jquery-3.1.0.min.js"></script>
+    <script src="app/main.js"></script>
 </body>
-
 </html>
