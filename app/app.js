@@ -13,6 +13,7 @@
     var app = {
         perroEstadoFilter: document.getElementById( "perroEstadoFilter" ),
         perroList: [],
+        localList : [],
     }
 
     var loadData = function() {
@@ -67,14 +68,14 @@
                     return perro;
                 }
             });
-            mostrarPerris(perrisFiltrados);
+            displayPerros(perrisFiltrados);
         });
         loadData();
     }else{
         var perroLocal = JSON.parse(localStorage.getItem('perrisLocal'));
         console.log(perroLocal);
         app.localList = perroLocal.results;
-        mostrarPerris(app.localList);
+        displayPerros(app.localList);
 
         app.perroEstadoFilter.addEventListener( "change", function( e ) {
             var filteredPerros = app.perroList.filter( function( perro ) {
