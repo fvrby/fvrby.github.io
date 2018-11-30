@@ -13,6 +13,7 @@
     var app = {
         perroEstadoFilter: document.getElementById( "perroEstadoFilter" ),
         perroList: [],
+        localList : [],
     }
 
     var loadData = function() {
@@ -60,14 +61,30 @@
         }
     }
 
-    app.perroEstadoFilter.addEventListener( "change", function( e ) {
-        var filteredPerros = app.perroList.filter( function( perro ) {
-            if( perro.estado == app.perroEstadoFilter.value ) {
-                return perro;
-            }
+    if(navigator.onLine){
+        app.filtroEstado.addEventListener("change", function(e){
+            var perrisFiltrados = app.listaPerris.filter(function(perro){
+                if (perro.estado == app.filtroEstado.value || app.filtroEstado.value == "TODOS"){
+                    return perro;
+                }
+            });
+            displayPerros(perrisFiltrados);
+        });
+        loadData();
+    }else{
+        var perroLocal = JSON.parse(localStorage.getItem('perrisLocal'));
+        console.log(perroLocal);
+        app.localList = perroLocal.results;
+        displayPerros(app.localList);
+
+        app.perroEstadoFilter.addEventListener( "change", function( e ) {
+            var filteredPerros = app.perroList.filter( function( perro ) {
+                if( perro.estado == app.perroEstadoFilter.value ) {
+                    return perro;
+                }
+            } );displayPerros( filteredPerros );
         } );
-        displayPerros( filteredPerros );
-    } );
+    }
     
     loadData();
 } ) ( );
