@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 	$('.slider li').hide(); // ocultan slides
 	$('.slider li:first').show(); // Muestra 1r slide
-	$('.pagination li:first').css({'color': '#CD6E2E'}); //Estilo de pagina
+	$('.pagination li:first').css({'color': '#Pink'}); //Estilo de pagina
 
 	// Ejecutan funciones
 	$('.pagination li').click(pagination);
