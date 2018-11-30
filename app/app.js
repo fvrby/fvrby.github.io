@@ -24,6 +24,7 @@
                 console.log( this.responseText );
                 var data = JSON.parse( this.responseText );
                 displayPerros( data.results );
+                localStorage.setItem('perros',JSON.stringify(data.results));
                 app.perroList = data.results;
             }
         }
@@ -59,6 +60,21 @@
             perrosContainer.appendChild( perroContainer );
         }
     }
+
+    if(navigator.onLine){
+        app.perroEstadoFilter.addEventListener("change", function(e){
+            var filteredPerros = app.perroList.filter(function(perro){
+                if (perro.estado == app.perroEstadoFilter.value || app.perroEstadoFilter.value == "TODOS"){
+                    return perro;
+                    localStorage.setItem('perros',perro);
+                }
+            });
+            displayPerros(filteredPerros);
+        });
+        loadData();
+    }else{
+        displayPerros(JSON.parse(localStorage.getItem('perros')));
+    }    
 
     app.perroEstadoFilter.addEventListener( "change", function( e ) {
         var filteredPerros = app.perroList.filter( function( perro ) {
